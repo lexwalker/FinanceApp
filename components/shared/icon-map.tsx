@@ -1,0 +1,32 @@
+import {
+  BriefcaseBusiness,
+  CarTaxiFront,
+  Ellipsis,
+  Gift,
+  HeartPulse,
+  House,
+  PartyPopper,
+  RotateCcw,
+  Shirt,
+  Sparkles,
+  TvMinimal,
+  UtensilsCrossed,
+  Wallet,
+  type LucideIcon,
+} from "lucide-react";
+
+export const categoryIconMap: Record<string, LucideIcon> = {
+  wallet: Wallet,
+  "briefcase-business": BriefcaseBusiness,
+  "rotate-ccw": RotateCcw,
+  gift: Gift,
+  sparkles: Sparkles,
+  "utensils-crossed": UtensilsCrossed,
+  house: House,
+  "tv-minimal": TvMinimal,
+  "car-taxi-front": CarTaxiFront,
+  "party-popper": PartyPopper,
+  "heart-pulse": HeartPulse,
+  shirt: Shirt,
+  ellipsis: Ellipsis,
+};
