@@ -79,7 +79,7 @@ export function TransactionForm({
             className={cn(
               "rounded-[24px] border px-5 py-4 text-left transition",
               type === item
-                ? "border-slate-950 bg-slate-950 text-white shadow-[0_20px_45px_-26px_rgba(15,23,42,0.8)]"
+                ? "border-slate-950 bg-slate-950 !text-white shadow-[0_20px_45px_-26px_rgba(15,23,42,0.8)] [&_*]:!text-white"
                 : "border-slate-200 bg-white text-slate-700 hover:bg-slate-50",
             )}
           >
@@ -87,7 +87,7 @@ export function TransactionForm({
               {item === "expense" ? "Расход" : "Доход"}
             </p>
             <p className="mt-2 text-lg font-semibold tracking-[-0.03em]">
-              {item === "expense" ? "Списываю деньги" : "Получаю деньги"}
+              {item === "expense" ? "Списание денег" : "Поступление денег"}
             </p>
           </button>
         ))}
@@ -146,7 +146,7 @@ export function TransactionForm({
           <div>
             <p className="text-sm font-semibold text-slate-950">Обязательная трата</p>
             <p className="text-sm leading-6 text-slate-500">
-              Аренда, подписки, транспорт, связь и другие регулярные платежи.
+              Отмечай так аренду, подписки, связь, транспорт и другие фиксированные платежи.
             </p>
           </div>
           <button
@@ -176,7 +176,7 @@ export function TransactionForm({
         </Link>
         <button
           type="submit"
-          className="inline-flex h-12 items-center justify-center rounded-2xl bg-slate-950 px-5 text-sm font-semibold text-white shadow-[0_18px_30px_-18px_rgba(15,23,42,0.6)] transition hover:translate-y-[-1px]"
+          className="inline-flex h-12 items-center justify-center rounded-2xl bg-slate-950 px-5 text-sm font-semibold !text-white shadow-[0_18px_30px_-18px_rgba(15,23,42,0.6)] transition hover:translate-y-[-1px] [&_*]:!text-white"
         >
           {submitLabel}
         </button>

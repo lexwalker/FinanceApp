@@ -29,7 +29,7 @@ export default function EditTransactionPage() {
     return (
       <AppShell>
         <EmptyState
-          title="Транзакция не найдена"
+          title="Операция не найдена"
           description="Запись могла быть удалена. Вернись в историю и выбери актуальную операцию."
         />
       </AppShell>
@@ -40,9 +40,9 @@ export default function EditTransactionPage() {
     <AppShell>
       <div className="grid gap-6">
         <PageHeader
-          eyebrow="Edit Transaction"
-          title="Редактирование операции"
-          description="Здесь можно скорректировать сумму, категорию, дату, комментарий и обязательность расхода."
+          eyebrow="Редактирование"
+          title="Изменить операцию"
+          description="Скорректируй сумму, категорию, дату, комментарий и отметку обязательной траты."
           action={
             <Link
               href="/history"

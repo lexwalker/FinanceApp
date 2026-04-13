@@ -30,8 +30,7 @@ export default function HistoryPage() {
   const monthOptions = getMonthOptions(transactions);
   const filteredTransactions = sortTransactionsByDate(transactions).filter((transaction) => {
     const matchesType = typeFilter === "all" || transaction.type === typeFilter;
-    const matchesCategory =
-      categoryFilter === "all" || transaction.categoryId === categoryFilter;
+    const matchesCategory = categoryFilter === "all" || transaction.categoryId === categoryFilter;
     const transactionMonth = transaction.date.slice(0, 7);
     const matchesMonth = monthFilter === "all" || transactionMonth === monthFilter;
     const normalizedNote = transaction.note.toLowerCase();
@@ -44,9 +43,9 @@ export default function HistoryPage() {
     <AppShell>
       <div className="grid gap-6">
         <PageHeader
-          eyebrow="History"
+          eyebrow="История"
           title="Все операции под контролем"
-          description="Фильтруй по типу, категории и месяцу, ищи по комментариям, редактируй и удаляй транзакции без лишнего шума."
+          description="Фильтруй по типу, категории и месяцу, ищи по комментариям, редактируй и удаляй операции без лишнего шума."
         />
 
         <GlassCard className="p-5 md:p-6">
@@ -68,9 +67,7 @@ export default function HistoryPage() {
               <span className="text-sm font-medium text-slate-600">Категория</span>
               <select
                 value={categoryFilter}
-                onChange={(event) =>
-                  setCategoryFilter(event.target.value as "all" | Category["id"])
-                }
+                onChange={(event) => setCategoryFilter(event.target.value as "all" | Category["id"])}
                 className="h-12 rounded-2xl border border-slate-200 bg-white px-4 text-slate-950 outline-none transition focus:border-slate-950"
               >
                 <option value="all">Все категории</option>
@@ -115,7 +112,7 @@ export default function HistoryPage() {
           categories={categories}
           onDelete={deleteTransaction}
           emptyTitle="Ничего не найдено"
-          emptyDescription="По текущим фильтрам операций нет. Сбрось фильтры или добавь новую транзакцию."
+          emptyDescription="По текущим фильтрам операций нет. Сбрось фильтры или добавь новую запись."
         />
       </div>
     </AppShell>

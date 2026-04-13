@@ -43,11 +43,10 @@ export function BudgetEditor({ categories, budgetTargets, onSave }: BudgetEditor
         <div>
           <p className="text-sm text-slate-500">Настройка лимитов</p>
           <h2 className="mt-1 text-2xl font-semibold tracking-[-0.04em] text-slate-950">
-            Бюджеты по категориям
+            Сколько комфортно тратить по категориям
           </h2>
           <p className="mt-2 max-w-2xl text-sm leading-6 text-slate-500">
-            Лимит в 0 означает, что категория пока не ограничена. Всё хранится локально и сразу
-            влияет на дашборд и аналитику.
+            Поставь пределы по основным расходам, чтобы быстрее замечать зоны риска и свободный запас.
           </p>
         </div>
 

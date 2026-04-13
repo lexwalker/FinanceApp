@@ -22,18 +22,13 @@ export default function NewTransactionPage() {
     <AppShell>
       <div className="grid gap-6">
         <PageHeader
-          eyebrow="Create Transaction"
+          eyebrow="Новая запись"
           title="Добавить доход или расход"
-          description="MVP-форма с суммой, категорией, датой, комментарием и флагом обязательной траты. Всё хранится локально и доступно сразу."
+          description="Заполни сумму, дату, категорию и комментарий. Если это регулярный платеж, отметь его как обязательный."
         />
 
         <GlassCard className="mx-auto w-full max-w-4xl p-6 md:p-8">
-          <TransactionForm
-            categories={categories}
-            mode="create"
-            onSubmit={addTransaction}
-            submitLabel="Сохранить транзакцию"
-          />
+          <TransactionForm categories={categories} mode="create" onSubmit={addTransaction} submitLabel="Сохранить операцию" />
         </GlassCard>
       </div>
     </AppShell>

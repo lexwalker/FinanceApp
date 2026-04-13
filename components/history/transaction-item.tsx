@@ -29,6 +29,11 @@ export function TransactionItem({
               Обязательная
             </span>
           ) : null}
+          {transaction.recurringSourceId ? (
+            <span className="rounded-full bg-amber-50 px-2.5 py-1 text-xs font-medium text-amber-700">
+              Авто из recurring
+            </span>
+          ) : null}
           <span className="text-xs text-slate-400">{formatLongDate(transaction.date)}</span>
         </div>
         <div>

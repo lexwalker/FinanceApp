@@ -18,7 +18,7 @@ export function TransactionList({
   categories,
   onDelete,
   emptyTitle = "Операции не найдены",
-  emptyDescription = "Попробуй изменить фильтры или добавь первую транзакцию.",
+  emptyDescription = "Попробуй изменить фильтры или добавь первую операцию.",
 }: TransactionListProps) {
   if (transactions.length === 0) {
     return <EmptyState title={emptyTitle} description={emptyDescription} />;

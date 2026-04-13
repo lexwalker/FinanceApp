@@ -17,13 +17,13 @@ type BudgetProgressCardProps = {
 
 const statusConfig = {
   safe: {
-    label: "В бюджете",
+    label: "В лимите",
     icon: CheckCircle2,
     tone: "text-emerald-700 bg-emerald-50 border-emerald-100",
     bar: "bg-emerald-500",
   },
   warning: {
-    label: "Почти лимит",
+    label: "Почти предел",
     icon: TrendingUp,
     tone: "text-amber-700 bg-amber-50 border-amber-100",
     bar: "bg-amber-500",
@@ -35,7 +35,7 @@ const statusConfig = {
     bar: "bg-rose-500",
   },
   unplanned: {
-    label: "Без бюджета",
+    label: "Без лимита",
     icon: Radar,
     tone: "text-slate-700 bg-slate-100 border-slate-200",
     bar: "bg-slate-500",

@@ -14,8 +14,9 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: "Clean Finance MVP",
-  description: "Minimal personal finance tracker with analytics, history, and monthly summary.",
+  title: "Clean Finance",
+  description:
+    "Личный трекер финансов с балансом, аналитикой, лимитами, копилкой и регулярными платежами.",
 };
 
 export default function RootLayout({
