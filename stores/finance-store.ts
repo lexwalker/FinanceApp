@@ -49,7 +49,7 @@ export const useFinanceStore = create<FinanceStore>()(
   persist(
     (set) => ({
       ...seedState,
-      hasHydrated: false,
+      hasHydrated: true,
       setHydrated: (value) => set({ hasHydrated: value }),
       addTransaction: (values) =>
         set((state) => {
